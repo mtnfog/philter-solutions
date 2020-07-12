@@ -14,7 +14,14 @@ Run the jar:
 
 `java -jar ./target/philter-log-kafka-jar-with-dependencies.jar`
 
-Logs produced during the execution will be published to Kafka. Refer to the `log4j2.xml` file to configure the connection to Kafka and the destination topic.
+Logs produced during the execution will be published to Kafka. Refer to the `log4j2.xml` file to configure the connection to Kafka and the destination topic:
+
+```
+<Kafka name="Kafka" topic="philter">
+  <PatternLayout pattern="%date %message"/>
+  <Property name="bootstrap.servers">localhost:9092</Property>
+</Kafka>
+```
 
 ## License
 
