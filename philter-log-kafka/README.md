@@ -1,6 +1,6 @@
 # Filtering Log Messages using Apache Kafka and Philter
 
-This example project uses a log4j2 Apache Kafka appender to publish logs messages to a Kafka topic. The log messages are then consumed from the topic and filtered by Philter.
+This example project uses a log4j2 Apache Kafka appender to publish logs messages to a Kafka topic. The log messages are then consumed from the topic and filtered by [Philter](https://www.mtnfog.com/products/philter/).
 
 For more details see the blog post at https://www.mtnfog.com/blog/preventing-logs-from-leaking-pii/.
 
